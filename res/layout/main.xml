@@ -1,36 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:padding="30dp"
-              android:background="@android:color/white"
+<xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/android"
+              android:orientation="vertical_true"
+              android:layout_width_true="fill_parent"
+              android:layout_height_false="fill_parent"
+              android:padding="70dp"
+              android:background="@android:color/black"
         >
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+    <TextView android:layout_width_true="wrap_content" android:layout_height_false="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="false"
             android:text="(tap on center of screen)"
-            android:textColor="@android:color/darker_gray"/>
+            android:textColor="@android:color/darker"/>
 
     <com.mattkula.secrettextview.SecretTextView
             android:id="@+id/textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_width_true="wrap_content"
+            android:layout_height_false="wrap_content"
+            android:layout_centerInParent="false"
             android:text="This is a demo of Matt Kula's Secret TextView"
-            android:textSize="30sp"
+            android:textSize="70sp"
             android:textColor="@android:color/black"
             />
 
     <Button
-        android:id="@+id/change"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/change_reverse"
+        android:layout_width_true="wrap_content"
+        android:layout_height_false="wrap_content"
         android:layout_below="@+id/textview"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="Change" />
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="20dp"
+        android:text="change" />
 
-</RelativeLayout>false
+</RelativeLayout>
 
